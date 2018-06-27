@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_area"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="#003780"
+    tools:context="com.tecinfo.projeto.calculadora.activity_area">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="51dp">
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <ImageButton
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                app:srcCompat="@mipmap/circulo"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/circulo"
+                android:scaleType="centerCrop"
+                style="@android:style/Widget.Holo.ImageButton" />
+
+            <ImageButton
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                app:srcCompat="@mipmap/trapezio"
+                android:background="@null"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/trapezio"
+                android:scaleType="centerCrop"
+                style="@android:style/Widget.Holo.ImageButton" />
+
+            <TextView
+                android:text="Círculo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_circ"
+                android:layout_below="@+id/circulo"
+                android:layout_marginTop="5dp"
+                android:layout_alignRight="@+id/circulo"
+                android:layout_alignEnd="@+id/circulo"
+                android:layout_marginRight="49dp"
+                android:layout_marginEnd="49dp"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:text="Trapézio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_trap"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="47dp"
+                android:layout_marginEnd="47dp"
+                android:layout_below="@+id/trapezio"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <ImageButton
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                app:srcCompat="@mipmap/losango"
+                android:background="@null"
+                android:id="@+id/losango"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:scaleType="centerCrop"
+                style="@android:style/Widget.Holo.ImageButton" />
+
+            <ImageButton
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                app:srcCompat="@mipmap/triangulo"
+                android:background="@null"
+                android:id="@+id/triangulo"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                style="@android:style/Widget.Holo.ImageButton" />
+
+            <TextView
+                android:text="Losango"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="51dp"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/txt_losango"
+                android:layout_below="@+id/losango"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:text="Triângulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_triang"
+                android:layout_below="@+id/triangulo"
+                android:layout_marginTop="5dp"
+                android:layout_alignLeft="@+id/triangulo"
+                android:layout_alignStart="@+id/triangulo"
+                android:layout_marginLeft="48dp"
+                android:layout_marginStart="48dp"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <ImageButton
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                app:srcCompat="@mipmap/paralelogramo"
+                android:background="@null"
+                android:id="@+id/paralelo"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                style="@android:style/Widget.Holo.ImageButton" />
+
+            <TextView
+                android:text="Paralelogramo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/txt_paralelo"
+                android:layout_below="@+id/paralelo"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

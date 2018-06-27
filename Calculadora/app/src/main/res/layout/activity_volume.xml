@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_volume"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#691e14"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.tecinfo.projeto.calculadora.activity_volume">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageButton
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@mipmap/cilindro"
+                    android:id="@+id/cilindro"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    style="@android:style/Widget.Holo.ImageButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageButton
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@mipmap/cone"
+                    android:background="@null"
+                    android:id="@+id/cone"
+                    android:scaleType="centerCrop"
+                    style="@android:style/Widget.Holo.ImageButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:text="Cilíndro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_cilindro"
+                    android:layout_alignBottom="@+id/txt_cone"
+                    android:layout_alignLeft="@+id/cilindro"
+                    android:layout_alignStart="@+id/cilindro"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginStart="49dp"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:text="Cone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_cone"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_below="@+id/cone"
+                    android:layout_alignRight="@+id/cone"
+                    android:layout_alignEnd="@+id/cone"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginEnd="60dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageButton
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@mipmap/esfera"
+                    android:id="@+id/esfera"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    style="@android:style/Widget.Holo.ImageButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:elevation="0dp" />
+
+                <ImageButton
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@mipmap/paralelepipedo"
+                    android:id="@+id/paralelepipedo"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    style="@android:style/Widget.Holo.ImageButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:text="Esfera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/txt_esfera"
+                    android:layout_below="@+id/esfera"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:text="Paralelepípedo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_paralelepipedo"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="26dp"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_below="@+id/esfera"
+                    android:layout_alignLeft="@+id/paralelepipedo"
+                    android:layout_alignStart="@+id/paralelepipedo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageButton
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@mipmap/cubo2"
+                    android:id="@+id/cubo"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    style="@android:style/Widget.Holo.ImageButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageButton
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@mipmap/prisma"
+                    android:id="@+id/prisma"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    style="@android:style/Widget.Holo.ImageButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:text="Cubo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginStart="58dp"
+                    android:id="@+id/txt_cubo"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_below="@+id/cubo"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:text="Prisma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_prisma"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/prisma"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="54dp"
+                    android:layout_marginEnd="54dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageButton
+                    android:layout_width="160dp"
+                    app:srcCompat="@mipmap/piramide"
+                    android:id="@+id/piramide"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    style="@android:style/Widget.Holo.ImageButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:text="Pirâmide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_piramide"
+                    android:layout_below="@+id/piramide"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

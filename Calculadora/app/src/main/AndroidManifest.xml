@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tecinfo.projeto.calculadora">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Menu"
+            android:label="Menu Inicial">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity_area"
+            android:label="Área">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.Menu" />
+        </activity>
+        <activity
+            android:name=".activity_bhask"
+            android:label="Bháskara">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.Menu" />
+        </activity>
+        <activity
+            android:name=".activity_volume"
+            android:label="Volume">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.Menu" />
+        </activity>
+        <activity
+            android:name=".activity_potencia"
+            android:label="Potenciação">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.Menu" />
+        </activity>
+        <activity
+            android:name=".activity_radical"
+            android:label="Radiciação">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.Menu" />
+        </activity>
+        <activity
+            android:name=".activity_matriz"
+            android:label="Matriz">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.Menu" />
+        </activity>
+        <activity
+            android:name=".activity_IMC"
+            android:label="IMC">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.Menu" />
+        </activity>
+        <activity
+            android:name=".activity_area_circulo"
+            android:label="Círculo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.activity_area" />
+        </activity>
+        <activity
+            android:name=".activity_area_trapezio"
+            android:label="Trapézio">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.activity_area" />
+        </activity>
+        <activity
+            android:name=".activity_area_losango"
+            android:label="Losango">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.activity_area" />
+        </activity>
+        <activity
+            android:name=".activity_area_triangulo"
+            android:label="Triângulo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.activity_area" />
+        </activity>
+        <activity
+            android:name=".activity_area_para"
+            android:label="Paralelogramo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.activity_area" />
+        </activity>
+        <activity
+            android:name=".activity_volume_cone"
+            android:label="Cone">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.activity_volume" />
+        </activity>
+        <activity
+            android:name=".activity_volume_cilindro"
+            android:label="Cilíndro">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.activity_volume" />
+        </activity>
+        <activity
+            android:name=".activity_volume_esfera"
+            android:label="Esfera">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.activity_volume" />
+        </activity>
+        <activity
+            android:name=".activity_volume_pipedo"
+            android:label="Paralelepípedo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.activity_volume" />
+        </activity>
+        <activity
+            android:name=".activity_volume_cubo"
+            android:label="Cubo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.activity_volume" />
+        </activity>
+        <activity
+            android:name=".activity_volume_piramide"
+            android:label="Pirâmide">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.activity_volume" />
+        </activity>
+        <activity
+            android:name=".activity_volume_prisma"
+            android:label="Prisma">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tecinfo.projeto.calculadora.activity_volume" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:background="#2C3E50"
+    tools:context="com.tecinfo.projeto.calculadora.Menu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1000dp">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageButton
+                    app:srcCompat="@mipmap/bhask"
+                    android:id="@+id/bhask"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    style="@android:style/Widget.Holo.Light.ImageButton" />
+
+                <ImageButton
+                    app:srcCompat="@mipmap/area2"
+                    android:id="@+id/area"
+                    android:scaleType="centerCrop"
+                    android:background="@null"
+                    style="@android:style/Widget.Holo.Light.ImageButton"
+                    android:layout_alignParentTop="true"
+                    android:elevation="0dp"
+                    android:layout_height="100dp"
+                    android:layout_width="160dp" />
+
+                <TextView
+                    android:text="Bháskara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_bhask"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:layout_alignTop="@+id/txt_area"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="46dp"
+                    android:layout_marginEnd="46dp" />
+
+                <TextView
+                    android:text="Área"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_area"
+                    android:layout_marginLeft="59dp"
+                    android:layout_marginStart="59dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/area"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageButton
+                    android:layout_width="160dp"
+                    app:srcCompat="@mipmap/potencia"
+                    android:id="@+id/potencia"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@null"
+                    style="@android:style/Widget.Holo.Light.ImageButton"
+                    android:layout_height="100dp" />
+
+                <ImageButton
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@mipmap/radical"
+                    android:id="@+id/radical"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@null"
+                    style="@android:style/Widget.Holo.Light.ImageButton" />
+
+                <TextView
+                    android:text="Radiciação"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_radical"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginRight="39dp"
+                    android:layout_marginEnd="39dp"
+                    android:layout_below="@+id/radical"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:text="Potenciação"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_potencia"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/potencia"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginStart="33dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageButton
+                    android:layout_height="100dp"
+                    app:srcCompat="@mipmap/volume"
+                    android:id="@+id/volume"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@null"
+                    style="@android:style/Widget.Holo.Light.ImageButton"
+                    android:layout_width="160dp" />
+
+                <ImageButton
+                    android:layout_width="160dp"
+                    app:srcCompat="@mipmap/matriz"
+                    android:id="@+id/matriz"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@null"
+                    style="@android:style/Widget.Holo.Light.ImageButton"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:text="Volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="46dp"
+                    android:layout_marginEnd="46dp"
+                    android:id="@+id/txt_volume"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_below="@+id/volume"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:text="Matriz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_matriz"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignBaseline="@+id/txt_volume"
+                    android:layout_alignBottom="@+id/txt_volume"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="57dp"
+                    android:layout_marginStart="57dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageButton
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@mipmap/imc"
+                    android:id="@+id/imc"
+                    android:background="@null"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    style="@android:style/Widget.Holo.Light.ImageButton"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:text="IMC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/imc"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginStart="64dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

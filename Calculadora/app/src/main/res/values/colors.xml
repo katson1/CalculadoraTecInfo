@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212F3D</color>
+    <color name="colorPrimaryDark">#1C2833</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="notificationBarArea">#0c1d51</color>
+    <color name="notificationBarBhask">#166135</color>
+    <color name="notificationBarVolume">#330e09</color>
+    <color name="notificationBarPotencia">#2e813c</color>
+    <color name="notificationBarRadical">#935806</color>
+    <color name="notificationBarMatriz">#1d2a4e</color>
+    <color name="notificationBarIMC">#462a18</color>
+
+</resources>
